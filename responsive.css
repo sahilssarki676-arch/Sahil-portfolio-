@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Sahil Sarki — Portfolio
+   responsive.css — breakpoints for tablet & mobile
+   ========================================================================== */
+
+/* ---------- Large screens tighten ---------- */
+@media (max-width: 1200px) {
+  .services-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-track { grid-template-columns: 1fr; max-width: 640px; }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+  .section { padding: 96px 6vw; }
+
+  .hero-container { grid-template-columns: 1fr; gap: 50px; }
+  .hero-terminal { max-width: 520px; }
+  .hero-buttons { justify-content: flex-start; }
+
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+  .about-visual { max-width: 360px; margin: 0 auto; }
+
+  .nav-links { display: none; }
+  #hamburger { display: flex; }
+
+  .nav-links.open {
+    display: flex; position: fixed; top: var(--header-h); left: 0; right: 0;
+    flex-direction: column; background: rgba(5,7,12,0.97); backdrop-filter: blur(20px);
+    padding: 30px 8vw; gap: 22px; border-bottom: 1px solid var(--border);
+  }
+  body.light-mode .nav-links.open { background: rgba(244,246,251,0.97); }
+}
+
+/* ---------- Small tablet / large phone ---------- */
+@media (max-width: 768px) {
+  .services-grid, .why-grid, .projects-grid { grid-template-columns: 1fr; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+
+  .btn-nav { display: none; }
+
+  .hero { padding-top: calc(var(--header-h) + 24px); }
+  .hero-buttons .btn span { display: inline; }
+
+  .float-book span { display: none; }
+  .float-book { width: 52px; padding: 0; }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 560px) {
+  .section { padding: 80px 6vw; }
+  .hero-name { font-size: 2.4rem; }
+  .hero-buttons { flex-direction: column; align-items: stretch; }
+  .hero-buttons .btn { justify-content: center; }
+
+  .terminal-body { font-size: 0.8rem; min-height: 220px; }
+
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-cta-buttons { flex-direction: column; }
+  .contact-cta-buttons .btn { justify-content: center; }
+
+  .floating-buttons { left: 16px; bottom: 16px; }
+  #back-to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+  .float-btn { width: 46px; height: 46px; font-size: 1.15rem; }
+
+  .contact-form-wrap { padding: 26px 20px; }
+}
