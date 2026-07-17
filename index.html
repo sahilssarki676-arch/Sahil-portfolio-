@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Sarki | Full Stack Web Developer &amp; AI Automation Developer</title>
+  <meta name="description" content="Sahil Sarki is a freelance Full Stack Web Developer and AI Automation Developer building fast, modern, responsive websites and AI-powered automation for businesses.">
+  <meta name="keywords" content="Sahil Sarki, Full Stack Developer, Web Developer, AI Automation, Freelance Developer, Website Designer, Prompt Engineering">
+  <meta name="author" content="Sahil Sarki">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sahil Sarki | Full Stack Web Developer & AI Automation Developer">
+  <meta property="og:description" content="Fast, modern, responsive websites and AI-powered automation for businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-bracket">&lt;</span>
+      <span class="loader-text">Sahil<span class="dot">.</span>dev</span>
+      <span class="loader-bracket">/&gt;</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div id="scroll-progress" role="progressbar" aria-label="Scroll progress"></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ SKIP LINK ============ -->
+  <a href="#home" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo" aria-label="Sahil Sarki home">
+        <span class="logo-bracket">&lt;</span>Sahil<span class="logo-accent">.</span>Sarki<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#services" class="nav-link" data-nav>Services</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#testimonials" class="nav-link" data-nav>Testimonials</a></li>
+        <li><a href="#faq" class="nav-link" data-nav>FAQ</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-nav">Hire Me</a>
+        <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="home" class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-glow hero-glow--one"></div>
+    <div class="hero-glow hero-glow--two"></div>
+
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-up">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Sahil Sarki</h1>
+        <p class="hero-role">Professional Web Developer &amp; AI Automation Developer</p>
+        <div class="hero-typed-wrap">
+          <span class="hero-typed-prefix">I build&nbsp;</span>
+          <span id="typed-text" class="hero-typed"></span>
+          <span class="cursor-blink" aria-hidden="true">|</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <span>Hire Me</span><i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <span>View Projects</span>
+          </a>
+          <a href="assets/Sahil_Sarki_Resume.pdf" class="btn btn-ghost" download>
+            <i class="fa-solid fa-download"></i><span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Signature element: live terminal console -->
+      <div class="hero-terminal" data-aos="fade-left" data-aos-delay="150">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">sahil@portfolio: ~</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal-output">sahil_sarki — full stack &amp; ai automation dev</p>
+            <p><span class="prompt">$</span> ./deploy_project.sh --client business</p>
+            <p class="terminal-output"><i class="fa-solid fa-spinner fa-spin"></i> building responsive UI...</p>
+            <p class="terminal-output success"><i class="fa-solid fa-check"></i> deployed to production ✔</p>
+            <p><span class="prompt">$</span> <span class="cursor-blink">▍</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="about" class="section about">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-visual" data-aos="fade-right">
+        <div class="about-card-glass">
+          <img src="assets/profile.jpg" alt="Sahil Sarki, Full Stack Web Developer and AI Automation Developer" loading="lazy" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Sahil%20Sarki&backgroundColor=0a0f1e&textColor=4f8cff'">
+          <div class="about-badge">
+            <i class="fa-solid fa-robot"></i>
+            <span>AI Automation Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text" data-aos="fade-left">
+        <p>
+          I'm Sahil Sarki, a full stack web developer and AI automation developer who designs and
+          builds fast, modern, fully responsive websites for businesses, freelancers, and personal
+          brands. I combine clean front-end engineering with practical AI-powered automation —
+          from chatbots to workflow tools — so the sites I ship don't just look good, they actually
+          work harder for the people who own them.
+        </p>
+        <p>
+          Every project I take on is built around three things: speed, clarity, and maintainability.
+          Whether it's a landing page for a local shop or a multi-page business site with a booking
+          system, I write clean, well-structured code that's easy to hand off, extend, and scale.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-card" data-counter="2">
+            <span class="stat-number"><span class="count">0</span>+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card" data-counter="25">
+            <span class="stat-number"><span class="count">0</span>+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card" data-counter="20">
+            <span class="stat-number"><span class="count">0</span>+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-card" data-counter="15">
+            <span class="stat-number"><span class="count">0</span>+</span>
+            <span class="stat-label">Technologies Used</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section id="skills" class="section skills">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Skills</p>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+
+    <div class="skills-grid" data-aos="fade-up">
+      <div class="skill-row" data-percent="95">
+        <div class="skill-label"><span>HTML</span><span class="skill-percent">95%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="92">
+        <div class="skill-label"><span>CSS</span><span class="skill-percent">92%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="88">
+        <div class="skill-label"><span>JavaScript</span><span class="skill-percent">88%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="93">
+        <div class="skill-label"><span>Responsive Design</span><span class="skill-percent">93%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="85">
+        <div class="skill-label"><span>Git &amp; GitHub</span><span class="skill-percent">85%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="87">
+        <div class="skill-label"><span>UI/UX</span><span class="skill-percent">87%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="80">
+        <div class="skill-label"><span>SEO</span><span class="skill-percent">80%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="90">
+        <div class="skill-label"><span>AI Automation</span><span class="skill-percent">90%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row" data-percent="91">
+        <div class="skill-label"><span>Prompt Engineering</span><span class="skill-percent">91%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES SECTION ============ -->
+  <section id="services" class="section services">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Services</p>
+      <h2 class="section-title">What I Can Build For You</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Business Websites</h3>
+        <p>Professional, conversion-focused websites that represent your brand and bring in customers.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="service-icon"><i class="fa-solid fa-id-badge"></i></div>
+        <h3>Portfolio Websites</h3>
+        <p>Personal portfolios that showcase your work with striking visuals and smooth interactions.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Landing Pages</h3>
+        <p>High-converting single pages built for campaigns, launches, and lead generation.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>E-commerce Websites</h3>
+        <p>Online stores with product catalogs, carts, and checkout flows that make selling easy.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <h3>Website Redesign</h3>
+        <p>Modernize an outdated site with a faster, cleaner, mobile-first rebuild.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Website Maintenance</h3>
+        <p>Ongoing updates, fixes, and monitoring so your site stays fast and secure.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI Chatbots</h3>
+        <p>Custom AI chat assistants that answer questions and capture leads around the clock.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>AI Automation</h3>
+        <p>Automated workflows that handle repetitive tasks so you can focus on growing the business.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h3>Speed Optimization</h3>
+        <p>Performance audits and fixes that make your existing site load faster everywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section id="projects" class="section projects">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Projects</p>
+      <h2 class="section-title">Recent Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <img src="assets/project-furniture.jpg" alt="Furniture Shop Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Furniture Shop Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Furniture Shop Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Furniture Shop Website</h3>
+          <p>A catalog-driven store site with product filtering and a warm, tactile visual style.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image">
+          <img src="assets/project-electronics.jpg" alt="Electronics Shop Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Electronics Shop Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Electronics Shop Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Electronics Shop Website</h3>
+          <p>A single-file storefront for a mobile &amp; electronics retailer with a clean product grid.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image">
+          <img src="assets/project-restaurant.jpg" alt="Restaurant Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Restaurant Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Restaurant Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Restaurant Website</h3>
+          <p>A menu-forward site with online reservation prompts and mouth-watering imagery.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <img src="assets/project-gym.jpg" alt="Gym Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Gym Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Gym Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Gym Website</h3>
+          <p>A high-energy fitness site with class schedules, trainer profiles, and membership CTAs.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image">
+          <img src="assets/project-realestate.jpg" alt="Real Estate Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Real Estate Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Real Estate Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Real Estate Website</h3>
+          <p>Property listings with search, filtering, and detail pages built for lead capture.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image">
+          <img src="assets/project-interior.jpg" alt="Interior Design Website" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=60'">
+          <div class="project-overlay">
+            <a href="#" class="icon-btn" aria-label="Live demo of Interior Design Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="icon-btn" aria-label="GitHub repository for Interior Design Website"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Interior Design Website</h3>
+          <p>A portfolio-style site for a design studio with a gallery-driven layout.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="text-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="text-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE ME ============ -->
+  <section class="section why-choose">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Why Choose Me</p>
+      <h2 class="section-title">What You Get, Every Project</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="0">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>Clear timelines and on-time handoffs, every time.</p>
+      </div>
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="80">
+        <i class="fa-solid fa-code"></i>
+        <h3>Clean Code</h3>
+        <p>Readable, well-structured code that's easy to maintain.</p>
+      </div>
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="160">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Mobile Responsive</h3>
+        <p>Looks and works great on every screen size.</p>
+      </div>
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="240">
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        <h3>SEO Friendly</h3>
+        <p>Built with search visibility in mind from the start.</p>
+      </div>
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="320">
+        <i class="fa-solid fa-tag"></i>
+        <h3>Affordable Pricing</h3>
+        <p>Transparent, fair rates with no hidden costs.</p>
+      </div>
+      <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fa-solid fa-heart-circle-check"></i>
+        <h3>Lifetime Support</h3>
+        <p>I stay reachable for fixes and questions after launch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="section testimonials">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Testimonials</p>
+      <h2 class="section-title">Client Feedback</h2>
+    </div>
+
+    <div class="testimonials-track" data-aos="fade-up">
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Sahil rebuilt our shop's website in a few days and it looks miles better than before. Customers now find us on mobile without any issues."</p>
+        <div class="testimonial-author">
+          <div class="avatar">JE</div>
+          <div><strong>Jay Enterprise</strong><span>Mobile Phone Retailer</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"He understood exactly what our restaurant needed — a fast, clean menu page our customers actually use. Great communication throughout."</p>
+        <div class="testimonial-author">
+          <div class="avatar">RB</div>
+          <div><strong>Rina B.</strong><span>Restaurant Owner</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The AI automation Sahil set up saves our team hours every week. Responsive, patient, and genuinely good at what he does."</p>
+        <div class="testimonial-author">
+          <div class="avatar">AK</div>
+          <div><strong>Aman K.</strong><span>Startup Founder</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section faq">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">FAQ</p>
+      <h2 class="section-title">Common Questions</h2>
+    </div>
+
+    <div class="faq-list" data-aos="fade-up">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How long does a typical website take?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Most business or portfolio websites take 3–7 days depending on scope. Larger sites with e-commerce or custom automation may take longer — I'll give you a clear timeline before we start.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you offer revisions?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Every project includes revision rounds so the final site matches your vision, and I stay available for adjustments after launch.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can you redesign my existing website?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. I can modernize an existing site's design, speed, and mobile responsiveness while keeping the content and structure you want to preserve.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does "AI automation" actually include?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>This ranges from AI chatbots that answer customer questions to automated workflows that handle repetitive tasks like lead follow-ups, content generation, or data entry — tailored to your business.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I get started?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Fill out the booking form below or message me on WhatsApp with a short description of your project. I'll follow up with a plan and quote within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Let's Build Something</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <p class="contact-lead">
+          Have a project in mind? Reach out directly or fill out the booking form and I'll get back
+          to you within 24 hours.
+        </p>
+
+        <div class="contact-methods">
+          <a href="tel:+919641591708" class="contact-method">
+            <i class="fa-solid fa-phone"></i>
+            <div><span>Phone</span><strong>+91 96415 91708</strong></div>
+          </a>
+          <a href="https://wa.me/919641591708" target="_blank" rel="noopener" class="contact-method">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div><span>WhatsApp</span><strong>Chat Instantly</strong></div>
+          </a>
+          <a href="mailto:sahilsarki724@gmail.com" class="contact-method">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><strong>sahilsarki724@gmail.com</strong></div>
+          </a>
+        </div>
+
+        <div class="contact-cta-buttons">
+          <a href="tel:+919641591708" class="btn btn-primary"><i class="fa-solid fa-phone"></i><span>Call Now</span></a>
+          <a href="https://wa.me/919641591708" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+          <a href="mailto:sahilsarki724@gmail.com" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i><span>Send Email</span></a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-aos="fade-left">
+        <form id="booking-form" class="booking-form" novalidate>
+          <h3>Book a Website</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full_name" required>
+            </div>
+            <div class="form-group">
+              <label for="business-name">Business Name</label>
+              <input type="text" id="business-name" name="business_name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="website-type">Website Type</label>
+              <select id="website-type" name="website_type" required>
+                <option value="" disabled selected>Select a type</option>
+                <option>Business Website</option>
+                <option>Portfolio Website</option>
+                <option>Landing Page</option>
+                <option>E-commerce Website</option>
+                <option>Website Redesign</option>
+                <option>AI Chatbot / Automation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range</option>
+                <option>Under ₹5,000</option>
+                <option>₹5,000 – ₹15,000</option>
+                <option>₹15,000 – ₹30,000</option>
+                <option>₹30,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="details">Project Details</label>
+            <textarea id="details" name="project_details" rows="4" required placeholder="Tell me about your project, goals, and timeline..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <span id="submit-text">Send Inquiry</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>Sahil<span class="logo-accent">.</span>Sarki<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Full Stack Web Developer &amp; AI Automation Developer, building websites and automation for businesses that want to move faster.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919641591708" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:sahilsarki724@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> +91 96415 91708</p>
+        <p><i class="fa-solid fa-envelope"></i> sahilsarki724@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Siliguri, India</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Sahil Sarki. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919641591708" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919641591708" class="float-btn float-call" aria-label="Call now">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="#contact" class="float-btn float-book" aria-label="Book a website">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span>Book a Website</span>
+    </a>
+  </div>
+
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
